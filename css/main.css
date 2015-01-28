@@ -1,0 +1,103 @@
+.navbar-bluebird {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+    text-transform:uppercase;
+}
+.nav.bb-nav > li > a{
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid rgba(0,0,0,0);
+}
+.nav.bb-nav > li > a:focus, .nav.bb-nav > li > a:hover {
+    background-color:initial;
+    border-bottom:1px solid #5275B4;
+}
+.navbar-bluebird li {
+    text-align:center;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif;
+    color:#5275B4;
+}
+body {
+    margin-top:10px;
+}
+
+.icon-bar {
+    background-color:#5275B4;
+}
+.promises-showroom .arrow {
+    text-align: center;
+    margin-top: 100px;
+    color:#EC9313;
+}
+
+pre{
+    background-color: initial;
+    border: none;
+    margin:0px;
+    padding:0px;
+}
+.promises-showroom .hljs{
+    border-radius: 6px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+.take-action{
+    position:relative;
+    min-height:300px;
+    
+}
+
+.take-action .cloud-bg{
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.take-action .action-buttons{
+    position:absolute;
+    top:50%;
+    text-align:center;
+    width:100%;
+}
+.btn-bb {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.btn-beak{
+    background-color: #EC9313;
+    border-bottom: 4px solid #BE7306;
+}
+.btn-wings {
+    background-color: #265584;
+    border-bottom: 4px solid #1A3A59;
+}
+.btn-bb:hover{
+    color:white;
+}
+.undo-margin{
+    margin-left:-15px;
+}
+
+.main-line{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 59px;
+    margin-top: -74px;
+    font-size: 20px;
+    color:white;
+}
+
+.tagline {
+    font-family: 'Raleway', sans-serif;
+    font-size:26px;
+    color:#5275B4;
+    font-weight:200;
+}
+
+.nav-child {
+    margin-left:20px;
+}
+.title:hover{
+    text-decoration:none;
+}
