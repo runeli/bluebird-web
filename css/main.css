@@ -86,7 +86,7 @@ pre{
     background-color: #265584;
     border-bottom: 4px solid #1A3A59;
 }
-.btn-bb:hover{
+.btn-bb:hover, .btn-bb:focus{
     color:white;
 }
 .undo-margin{
