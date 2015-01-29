@@ -46,13 +46,24 @@ pre{
 .take-action{
     position:relative;
     min-height:300px;
-    
+    overflow:hidden;
 }
 
 .take-action .cloud-bg{
     width: 100%;
     height: 300px;
     border: none;
+
+    background: #4483b3; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0ODNiMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI5ODlkOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0NTg0YjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #4483b3 0%, #2989d8 50%, #4584b4 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4483b3), color-stop(50%,#2989d8), color-stop(100%,#4584b4)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #4483b3 0%,#2989d8 50%,#4584b4 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #4483b3 0%,#2989d8 50%,#4584b4 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #4483b3 0%,#2989d8 50%,#4584b4 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #4483b3 0%,#2989d8 50%,#4584b4 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4483b3', endColorstr='#4584b4',GradientType=0 ); /* IE6-8 */
 }
 
 .take-action .action-buttons{
@@ -60,6 +71,8 @@ pre{
     top:50%;
     text-align:center;
     width:100%;
+    z-index: 2;
+
 }
 .btn-bb {
     font-family: 'Raleway', sans-serif;
@@ -100,4 +113,125 @@ pre{
 }
 .title:hover{
     text-decoration:none;
+}
+
+.cloud-puff-bg {
+	background: #f2f9fe;
+}
+
+
+.cloud-container{
+    position: relative;
+    left: -35%;
+    top: 200px;
+}
+
+.cloud-small {
+    transform: scale(0.7,0.7); 
+    top: 240px;
+}
+.cloud-big {
+    transform: scale(1.4, 1.4);
+}
+.cloud-base {
+    width: 350px;
+    height: 120px;
+    position: absolute;
+    border-radius: 100px;
+    z-index:1;
+}
+.cloud-light-gray .cloud-puff {
+    background-color:#DDD;
+} 
+
+.cloud-white .cloud-puff {
+    background-color:#FFF;
+}
+
+.cloud-light-blue .cloud-puff {
+    background-color:#A3D4F9;
+}
+
+.cloud-puff {
+	content: '';
+	position: absolute;
+}
+
+.puff1 {
+    width: 134px;
+    height: 100px;
+    top: -43px;
+    left: 45px;
+    border-radius: 100%;
+}
+.puff2 {
+    width: 150px;
+    height: 100px;
+    top: -43px;
+    left: 138px;
+    border-radius: 100%;
+}
+
+.cloud-see-through {
+    opacity: 0.86;
+}
+.cloud-move {
+    -webkit-animation-duration: 65s;
+    -webkit-animation-name: move;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+.cloud-delay-start {
+    -webkit-animation-delay:2s;
+}
+.cloud-delay-start-more {
+    -webkit-animation-delay:4s;
+}
+
+.cloud-move-slow {
+
+    -webkit-animation-duration: 100s;
+    -webkit-animation-name: move;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.cloud-move-fast {
+    -webkit-animation-duration: 50s;
+    -webkit-animation-name: move;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.cloud-move-reverse {
+    left:130%;
+    -webkit-animation-name: movereverse;
+}
+
+.cloud-bluebird {
+    -webkit-animation-duration: 15s;
+    -webkit-animation-name: move;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.cloud-tagline{
+    font-weight: 800;
+    font-size: 45px
+}
+
+@-webkit-keyframes move {
+	0% {left: -35%;opacity:0.3}
+    25% {opacity:1;}
+	50% {left: 130%;opacity:0.3;}
+    75% {opacity:1;}
+    100% {left: -35%;opacity:0.3}
+}
+
+@-webkit-keyframes movereverse {
+	0% {left: 130%;opacity:0.3}
+    25% {opacity:1;}
+	50% {left: -35%;opacity:0.3;}
+    75% {opacity:1;}
+    100% {left: 130%;opacity:0.3;}
 }
